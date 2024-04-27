@@ -1,4 +1,4 @@
-module arrTillery
+module github.com/u1ug/arrTillery
 
 go 1.22.1
 

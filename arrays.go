@@ -1,4 +1,4 @@
-package arr_tillery
+package arrtillery
 
 import (
 	"errors"

@@ -1,4 +1,4 @@
-module arrtillery
+module arrTillery
 
 go 1.22.1
 

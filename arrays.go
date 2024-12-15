@@ -76,11 +76,11 @@ func RandomUnique[T any](slice []T, n int) ([]T, error) {
 
 // Deduplicate removes duplicates from a slice of comparable elements.
 func Deduplicate[T comparable](slice []T) []T {
-	seen := make(map[T]bool)
+	seen := make(map[T]struct{})
 	var result []T
 	for _, v := range slice {
 		if _, ok := seen[v]; !ok {
-			seen[v] = true
+			seen[v] = struct{}{}
 			result = append(result, v)
 		}
 	}
